@@ -1,0 +1,621 @@
+/*ESTE ES EL CUERPO DE MI CV*/
+.cuerpo {
+    display: grid;
+    grid-template-columns: auto 350px 350px auto;
+    grid-template-rows: 50px 290px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 50px 40px 40px 40px 80px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+/*AUI VA MI FOTOGRAFIA*/
+#fotografia {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: auto;
+    height: auto;
+    background-image: url(/luis.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    --bor-color: black;
+    border: 2px solid var(--bor-color);
+    border-radius: 20px;
+    transform: rotate(180deg);
+}
+/*AQUI VA LA INFORMACION PERSONAL DE MI CV*/
+.con-info {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+    row-gap: 6%;
+}
+/*AQUI VA LA INFORMACION DE MI NOMBRE*/
+#info1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    font-family: Lobster;
+    color: black;
+    border: 1px solid black;
+    animation-name: info1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+/*AQUI EL EFECTO EN MI NOMBRE*/
+#info1:hover {
+    background: black;
+    color: white;
+}
+/*AQUI VA LA INFORMACION DE MI EDAD*/
+#info2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    font-family: monospace;
+    color: black;
+    border: 1px solid black;
+    animation-name: info1;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+/*AQUI EL EFECTO EN MI EDAD*/
+#info2:hover {
+    background: black;
+    color: white;
+} 
+/*AQUI VA LA INFORMACION DE MI TELEFONO*/
+#info3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    font-family: monospace;
+    color: black;
+    border: 1px solid black;
+    animation-name: info1;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+}
+/*AQUI EL EFECTO EN MI TELEFONO*/
+#info3:hover {
+    background: black;
+    color: white;
+}
+/*AQUI VA LA INFORMACION DE MI FACEBOOK*/
+#info4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    font-family: monospace;
+    color: black;
+    border: 1px solid black;
+    animation-name: info1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA EL EFECTO DE MI FACEBOOK*/
+#info4:hover {
+    background: black;
+    color: white;
+}
+/*AQUI VA LA INFORMACION DE PAIS*/
+#info5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    font-family: monospace;
+    color: black;
+    border: 1px solid black;
+    animation-name: info1;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA EL EFECTO DE MI PAIS*/
+#info5:hover {
+    background: black;
+    color: white;
+}
+/*AQUI VA LA BARRA NEGRA DE ESTUDIOS*/
+#estudios {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: estudios;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE LA BARRA NEGRA DE ESTUDIOS*/
+@keyframes estudios {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION DE MI PREPARATORIA*/
+#preparatoria {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA INFORMACION DE MI UNIVERSIDAD*/
+#universidad {
+    grid-column: 2/4;
+    grid-row: 5/6;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA BARRA NEGRA DE MIS HABILIDADES*/
+#habilidades {
+    grid-column: 2/4;
+    grid-row: 6/7;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: habilidades;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE MI BARRA DE HABILIDADES*/
+@keyframes habilidades {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION EL SENTIDO DE LA RESPONSABILIDAD*/
+#responsabilidad {
+    grid-column: 2/4;
+    grid-row: 7/8;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#responsabilidad:hover {
+    background-color:rgb(78, 228, 78);
+}
+/*AQUI VA LA INFORMACION CINFIANZA*/
+#confianza {
+    grid-column: 2/4;
+    grid-row: 8/9;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#confianza:hover {
+    background-color:rgb(217, 240, 92);
+}
+/*AQUI VA LA INFORMACION INICITIVA*/
+#iniciativa {
+    grid-column: 2/4;
+    grid-row: 9/10;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#iniciativa:hover {
+    background-color:rgb(78, 228, 78);
+}
+/*AQUI VA LA INFORMACION CREATIVIDAD*/
+#creatividad {
+    grid-column: 2/4;
+    grid-row: 10/11;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#creatividad:hover {
+    background-color:rgb(78, 228, 78);
+}
+/*AQUI VA LA INFORMACION EQUIPO*/
+#equipo {
+    grid-column: 2/4;
+    grid-row: 11/12;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#equipo:hover {
+    background-color:rgb(204, 7, 7);
+}
+/*AQUI VA LA BARRA NEGRA DE EXPERIENCIA*/
+#experiencia {
+    grid-column: 2/4;
+    grid-row: 12/13;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: experiencia;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE LA BARRA NEGRA DE ESTUDIOS*/
+@keyframes experiencia {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION DEL TIEMPO*/
+#tiempo {
+    grid-column: 2/3;
+    grid-row: 13/14;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA INFORMACION DEL TIEMPO*/
+#trabajo {
+    grid-column: 3/4;
+    grid-row: 13/14;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA BARRA NEGRA DE PROYECTOS*/
+#proyecto {
+    grid-column: 2/4;
+    grid-row: 14/15;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: proyecto;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE LA BARRA DE PROYECTO*/
+@keyframes proyecto {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION DE MIS PROYECTOS*/
+#no-proyecto {
+    grid-column: 2/4;
+    grid-row: 15/16;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA BARRA NEGRA DE INTERES*/
+#profesional {
+    grid-column: 2/4;
+    grid-row: 16/17;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: profesional;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE LA BARRA DEL INTERES*/
+@keyframes profesional {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION DEL INTERES*/
+#interes {
+    grid-column: 2/4;
+    grid-row: 17/18;
+    background-color: white;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 15px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA BARRA NEGRA DE MIS LENGUAJES DE PROGRAMACION*/
+#programacion {
+    grid-column: 2/4;
+    grid-row: 18/19;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: programacion;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE MI BARRA DE PROGRAMACION*/
+@keyframes programacion {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION DE C#*/
+#C {  
+    grid-column: 2/4;
+    grid-row: 19/20;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#C:hover {
+    background-color:rgb(223, 147, 35);
+}
+/*AQUI VA LA INFORMACION DE C++*/
+#cpp {  
+    grid-column: 2/4;
+    grid-row: 20/21;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#cpp:hover {
+    background-color:rgb(78, 228, 78);
+}
+/*AQUI VA LA INFORMACION DE Python*/
+#Python {  
+    grid-column: 2/4;
+    grid-row: 21/22;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#Python:hover {
+    background-color:rgb(197, 19, 19);
+}
+/*AQUI VA LA INFORMACION DE PHP*/
+#PHP {  
+    grid-column: 2/4;
+    grid-row: 22/23;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#PHP:hover {
+    background-color:rgb(114, 9, 35);
+}
+/*AQUI VA LA INFORMACION DE JavaScript*/
+#JavaScript {  
+    grid-column: 2/4;
+    grid-row: 23/24;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+#JavaScript:hover {
+    background-color:rgb(223, 147, 35);
+}
+/*AQUI VA LA BARRA NEGRA DE MIS LENGUAJES*/
+#lenguajes {
+    grid-column: 2/4;
+    grid-row: 24/25;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: lenguajes;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE MI BARRA DE LENGUAJES*/
+@keyframes lenguajes {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION DE ENGLISH*/
+#ingles {  
+    grid-column: 2/4;
+    grid-row: 25/26;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA BARRA NEGRA DE MIS REFERENCIAS*/
+#referencias {
+    grid-column: 2/4;
+    grid-row: 26/27;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-family: monospace;
+    animation-name: referencias;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+/*AQUI VA LA ANIMACION DE MIS REFERENCIAS*/
+@keyframes referencias {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+/*AQUI VA LA INFORMACION DEL NUMERO 1*/
+#num1 {  
+    grid-column: 2/3;
+    grid-row: 27/28;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA INFORMACION DEL REF 1*/
+#ref1 {  
+    grid-column: 3/4;
+    grid-row: 27/28;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA INFORMACION DEL NUMERO 2*/
+#num2 {  
+    grid-column: 2/3;
+    grid-row: 28/29;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
+/*AQUI VA LA INFORMACION DEL REF 2*/
+#ref2 {  
+    grid-column: 3/4;
+    grid-row: 28/29;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    font-family: monospace;
+    border: 1px solid black;
+}
